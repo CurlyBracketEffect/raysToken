@@ -1,0 +1,4 @@
+.kickback-section {
+  display: grid;
+  grid-template: auto / 50px max-content;
+}

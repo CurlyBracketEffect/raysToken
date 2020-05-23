@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ray Token</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <!-- project name should not be mutable -->
+      <label for="project-name">Project Name:</label><br />
+      <input type="text" id="project-name" name="project-name" /><br />
+
+      <!-- description for project can be changed -->
+      <label for="description">Project Description:</label><br />
+      <textarea id="description" name="description"></textarea><br />
+
+      <!-- Kickbacks -->
+      <label for="kickbacks">Kickback Breakdown:</label><br />
+
+      <section class="kickback-section">
+        <p>Tier</p>
+        <p>Reward</p>
+
+        <input type="text" id="kickback-tier" name="kickback-tier" />
+        <input
+          type="text"
+          id="kickback-tier-description"
+          name="kickback-tier-description"
+        />
+      </section>
+      <button id="addKickback">Add Tier</button><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
