@@ -160,6 +160,7 @@ contract projectFund{
         owner = _owner;
     }
 
+    //TODO: find a way to deposit to compound contract on another address's behalf
     function fund() public payable{
         CCA.transfer(msg.value);
         compoundInterface(CCA).mint();
